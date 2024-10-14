@@ -21,9 +21,9 @@ const MovieList = ({ movies, title }: MovieListProps) => {
                             <MovieCard key={id} movieData={data} />
                         ))
                         :
-                        [...Array(12)].map(item =>
-                            <MovieCardSkeleton />
-                        )
+                        Array.from({ length: 3 }).map((_, index) => (
+                            <MovieCardSkeleton key={index} />
+                        ))
                 }
             </div>
         </div>

@@ -15,13 +15,13 @@ const HomeCarouselList = ({ next, carouselMovies }: HomeCarouselListProps) => {
             <div className='row'>
                 {
                     carouselMovies.length > 0 ?
-                    next.map((item, id) => (
-                        <CarouselMiniCard carouselMovies={carouselMovies} item={item} id={id} />
-                    ))
-                    :
-                    [...Array(3)].map(item =>
-                        <CarouselMiniCardSkeleton />
-                    )
+                        next.map((item, id) => (
+                            <CarouselMiniCard carouselMovies={carouselMovies} item={item} id={id} />
+                        ))
+                        :
+                        [...Array(3)].map((_, index) => (
+                            <CarouselMiniCardSkeleton key={index} />
+                        ))
                 }
             </div>
         </>
