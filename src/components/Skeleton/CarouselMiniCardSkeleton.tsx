@@ -1,5 +1,3 @@
-import React from 'react'
-
 const CarouselMiniCardSkeleton = () => {
     return (
         <div className='col-xl-12 col'>

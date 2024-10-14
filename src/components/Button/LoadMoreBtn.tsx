@@ -1,5 +1,3 @@
-import React from 'react'
-
 const LoadMoreBtn = () => {
     return (
         <div className='flex justify-center mt-2'>

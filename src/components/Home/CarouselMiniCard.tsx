@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CarouselMovie, imagepath } from '../../utils/constant'
 import { FiThumbsUp } from 'react-icons/fi'

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DetailsSkeleton = () => {
     return (
         <div className='relative h-fit w-full placeholder-glow'>

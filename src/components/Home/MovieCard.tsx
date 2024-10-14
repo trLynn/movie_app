@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { imagepath, MovieCardType } from '../../utils/constant'
 import { Link } from 'react-router-dom'
 

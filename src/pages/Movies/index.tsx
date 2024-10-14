@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { category, MovieCardType } from '../../utils/constant'
 import { baseApi } from '../../api/axiosInstance'
 import MovieList from '../../components/Home/MovieList'
@@ -76,16 +76,16 @@ const Movies = () => {
       </div>
 
       {filter == "Now Playing" &&
-        <MovieList movies={nowPlaying} />
+        <MovieList movies={nowPlaying} title='Now Playing' />
       }
       {filter == "Popular" &&
-        <MovieList movies={popular} />
+        <MovieList movies={popular} title='Popular' />
       }
       {filter == "Top Rated" &&
-        <MovieList movies={topRated} />
+        <MovieList movies={topRated} title='Top Rated' />
       }
       {filter == "Upcoming" &&
-        <MovieList movies={upcoming} />
+        <MovieList movies={upcoming} title='Upcoming' />
       }
       <div onClick={handleLoadMore}>
         <LoadMoreBtn />
